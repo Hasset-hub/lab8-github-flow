@@ -5,6 +5,8 @@ from rich.text import Text
 
 console = Console()
 
+default_message = "You stand still, unsure what to do. The forest swallows you."
+
 def step(choice: str, events):
     random_event = random.choice(events)
 
@@ -14,7 +16,6 @@ def step(choice: str, events):
         return right_path(random_event)
     else:
         return "[dim]You stand still, unsure what to do. The forest swallows you.[/dim]"
-
 def left_path(event):
     return f"[green]You walk left.[/green] [italic]{event}[/italic]"
 
