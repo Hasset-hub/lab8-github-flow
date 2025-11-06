@@ -32,7 +32,7 @@ if __name__ == "__main__":
         choice = choice.strip().lower()
 
         if choice == "exit":
-            console.print("\n[bold red]You decide to leave the forest. Farewell, traveler![/bold red]")
+            console.print("\n[bold magenta]You have chosen to leave the forest. Goodbye, traveler![/bold magenta]\n")
             break
 
         # Get the story response and print it styled
